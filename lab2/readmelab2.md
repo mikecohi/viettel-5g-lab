@@ -12,10 +12,14 @@ Output:
 • Thực hiên curl tới nodePort và cho ra kết quả trang web tĩnh theo template
 
 ## Kết quả:
+![Screenshot 2024-11-15 073637](https://github.com/user-attachments/assets/7fbc4d58-73c9-4b20-874c-fbc93d305198)
+
 ```bash
 kubectl logs pod/web1-df85d5c88-4t88d -n lab2
 ```
-Trả về kết quả là: 127.0.0.1 - - [15/Nov/2024:07:02:43 +0000] "GET / HTTP/1.1" 200 37512 "-" "curl/7.88.1" cho thấy rằng 
+Trả về kết quả: _**127.0.0.1 - - [15/Nov/2024:07:02:43 +0000] "GET / HTTP/1.1" 200 37512 "-" "curl/7.88.1"**_
+
+cho thấy rằng 
 
 - một yêu cầu GET / đã được gửi tới server từ địa chỉ IP 127.0.0.1 (localhost).
 
